@@ -1,4 +1,4 @@
-import sys
+import sys, os
 if sys.version_info[0] == 2:
     import Tkinter
     from Tkinter import *
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     window.title('賓 果 抽 獎 器')
     bg_label = Label(window,width=70,height=24,bg='#ECf5FF')
     bg_label.place(anchor=NW,x=0,y=0)
-    background_img= PhotoImage(file='D:/bingo/img.png')
+    background_img= PhotoImage( file = os.getcwd() + '//img.png' )
     background= Label(window, image=background_img, bd=0)
     background.pack()
 

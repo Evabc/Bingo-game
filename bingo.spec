@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['bingo.py'],
-             pathex=['D:\\bingo'],
+             pathex=['d:\\bingo'],
              binaries=[],
              datas=[],
              hiddenimports=[],
